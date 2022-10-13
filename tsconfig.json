@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // Modules
+    "baseUrl": "./",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "paths": {
+      "@src/*": ["src/*"],
+      "@test/*": ["test/*"]
+    },
+    "rootDirs": [
+      "src",
+      "test"
+    ],
+    // Emit
+    "outDir": "dist",
+    "sourceMap": true,
+    "removeComments": true,
+    // Type Checking
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "target": "es2019",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
